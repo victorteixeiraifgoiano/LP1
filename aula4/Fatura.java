@@ -1,5 +1,7 @@
 package aula4;
 
+//Alunos: Victor Emannuel e Welder
+
 public class Fatura {
     String numero;
     String descricao;

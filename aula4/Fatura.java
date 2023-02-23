@@ -7,7 +7,7 @@ public class Fatura {
     String descricao;
     int quantidade;
     double preco;
-    
+
     public Fatura(String numero, String descricao, int quantidade, double preco) {
         this.numero = numero;
         this.descricao = descricao;
@@ -47,15 +47,15 @@ public class Fatura {
         this.preco = preco;
     }
 
-    public double getTotalFatura(){
+    public double getTotalFatura() {
         double total;
         total = preco * quantidade;
         if (total > 0.0) {
             return total;
-        }else{
+        } else {
             total = 0.0;
             return total;
         }
     }
-    
+
 }

@@ -9,7 +9,7 @@ public class InteiroSet {
         conjunto = new boolean[100];
     }
 
-    public boolean uniao(InteiroSet outroConjunto) {
+    public InteiroSet uniao(InteiroSet outroConjunto) {
         InteiroSet resultado = new InteiroSet();
         for (int i = 0; i < 100; i++) {
             resultado.conjunto[i] = this.conjunto[i] || outroConjunto.conjunto[i];
@@ -17,7 +17,7 @@ public class InteiroSet {
         return resultado;
     }
 
-    public boolean interseccao(InteiroSet outroConjunto) {
+    public InteiroSet interseccao(InteiroSet outroConjunto) {
         InteiroSet resultado = new InteiroSet();
         for (int i = 0; i < 100; i++) {
             resultado.conjunto[i] = this.conjunto[i] && outroConjunto.conjunto[i];

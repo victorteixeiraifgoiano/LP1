@@ -9,27 +9,54 @@ public class InteiroSet {
         conjunto = new boolean[100];
     }
 
-    public void adicionar(int valor) {
-        if (valor >= 0 && valor < 100) {
-            conjunto[valor] = true;
-        } else {
-            throw new IllegalArgumentException("O valor deve estar entre 0 e 99.");
+    public boolean uniao(InteiroSet outroConjunto) {
+        InteiroSet resultado = new InteiroSet();
+        for (int i = 0; i < 100; i++) {
+            resultado.conjunto[i] = this.conjunto[i] || outroConjunto.conjunto[i];
         }
+        return resultado;
     }
 
-    public void remover(int valor) {
-        if (valor >= 0 && valor < 100) {
-            conjunto[valor] = false;
-        } else {
-            throw new IllegalArgumentException("O valor deve estar entre 0 e 99.");
+    public boolean interseccao(InteiroSet outroConjunto) {
+        InteiroSet resultado = new InteiroSet();
+        for (int i = 0; i < 100; i++) {
+            resultado.conjunto[i] = this.conjunto[i] && outroConjunto.conjunto[i];
         }
+        return resultado;
     }
 
-    public boolean contem(int valor) {
-        if (valor >= 0 && valor < 100) {
-            return conjunto[valor];
-        } else {
-            throw new IllegalArgumentException("O valor deve estar entre 0 e 99.");
+    public void insereElemento(int k) {
+        this.conjunto[k] = true;
+    }
+
+    public void removeElemento(int m) {
+        this.conjunto[m] = false;
+    }
+
+    public String converteEmString() {
+        StringBuilder sb = new StringBuilder();
+        boolean isEmpty = true;
+        for (int i = 0; i < 100; i++) {
+            if (this.conjunto[i]) {
+                if (!isEmpty) {
+                    sb.append(" ");
+                }
+                sb.append(i);
+                isEmpty = false;
+            }
         }
+        if (isEmpty) {
+            sb.append("-");
+        }
+        return sb.toString();
+    }
+
+    public boolean eIgualA(InteiroSet outroConjunto) {
+        for (int i = 0; i < 100; i++) {
+            if (this.conjunto[i] != outroConjunto.conjunto[i]) {
+                return false;
+            }
+        }
+        return true;
     }
 }

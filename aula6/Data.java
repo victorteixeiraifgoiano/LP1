@@ -1,5 +1,7 @@
 package aula6;
 
+//Alunos: Victor Emannuel e Welder
+
 public class Data {
     int mes;
     int dia;

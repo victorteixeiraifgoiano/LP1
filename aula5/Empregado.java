@@ -1,5 +1,7 @@
 package aula5;
 
+//Alunos: Victor Emannuel e Welder
+
 public class Empregado {
     String nome;
     String sobrenome;

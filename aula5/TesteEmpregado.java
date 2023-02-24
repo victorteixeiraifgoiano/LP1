@@ -1,5 +1,7 @@
 package aula5;
 
+//Alunos: Victor Emannuel e Welder
+
 public class TesteEmpregado {
     public static void main(String[] args) {
         Empregado e1 = new Empregado("victor", "teixeira", 1000);

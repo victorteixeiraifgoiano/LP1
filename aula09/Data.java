@@ -1,4 +1,4 @@
-package aula9;
+package aula09;
 
 public class Data {
     int dia;

@@ -1,4 +1,4 @@
-package aula5;
+package aula05;
 
 //Alunos: Victor Emannuel e Welder
 

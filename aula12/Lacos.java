@@ -73,7 +73,7 @@ public class Lacos {
             System.out.println(Arrays.toString(n[i]));
         }
 
-        int x = 0;
+        // int x = 0;
 
         System.out.println((0 + 1) % 2);
     }

@@ -14,7 +14,7 @@ public class Teste {
         musica.addInterprete(interprete);
 
         // Criação do álbum
-        Album album = new Album(1, "Álbum", 2022);
+        Album album = new Album(1, "Álbum", 2023);
 
         // Adição dos artistas e músicas ao álbum
         album.addArtista(autor);

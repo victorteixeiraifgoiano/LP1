@@ -1,4 +1,11 @@
-package Ex28;
+package trabalhofinal.ex26;
+
+/* 
+ * Alunos:
+ *      Stéphany Lima Vital
+ *      Víctor Emannuel de Souza Teixeira
+ *      Welder Antônio de Moraes
+*/
 
 import java.util.Scanner;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package trabalhofinal.Ex03;
+package trabalhofinal.ex03;
 
 import java.util.Scanner;
 
